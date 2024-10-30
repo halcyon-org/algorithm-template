@@ -1,0 +1,13 @@
+git+https://github.com/halcyon-org/blllib.git@feat/main
+# git+https://github.com/halcyon-org/blllib.git@main
+pydantic
+
+# CI
+black
+pytest
+isort
+mypy
+
+# types
+types-requests
+types-tqdm
