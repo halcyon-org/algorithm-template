@@ -1,0 +1,15 @@
+name: VT Up CI
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  post-random-video:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Post PR comment with random video
+        uses: halcyon-org/actions/vt-up@main
+        with:
+          member: HakuiKoyori
