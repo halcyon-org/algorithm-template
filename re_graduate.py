@@ -111,13 +111,23 @@ def makejson(lat, lon):
             
             polygon = {
                 "type": "Polygon",
-                "coordinates": [
-                    [la - 50 / 6371000, lo - 50 / 6371000],
-                    [la + 50 / 6371000, lo - 50 / 6371000],
-                    [la - 50 / 6371000, lo + 50 / 6371000],
-                    [la + 50 / 6371000, lo + 50 / 6371000]
+                "point":[
+                    {"lat" : lat,
+                     "lng" : lon
+                    },
                 ],
-                "value": value[1]  # 単一の値のみを設定
+                #"coordinates": [
+                #    [la - 50 / 6371000, lo - 50 / 6371000],
+                #    [la + 50 / 6371000, lo - 50 / 6371000],
+                #    [la - 50 / 6371000, lo + 50 / 6371000],
+                #    [la + 50 / 6371000, lo + 50 / 6371000]
+                #],
+                "value": value[1],  # 単一の値のみを設定
+                "optional": [
+                    {"key" : "",
+                     "value" : ""
+                    },
+                ],
             }
             content.append(polygon)
 
