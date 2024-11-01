@@ -2,7 +2,6 @@ from datetime import datetime
 import sys
 import blllib
 import openapi_client
-
 from pydantic import StrictStr
 
 
